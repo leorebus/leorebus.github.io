@@ -1,0 +1,71 @@
+@import "reset.scss";
+@import "mixins.scss";
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.layout__left {
+  @media screen and (min-width: 768px) {
+    flex: 0 0 50%;
+  }
+}
+
+.page-head {
+  background-color: #6691da;
+  background-image: url('../img/me.jpg');
+  background-size: contain;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    width: 50%;
+  }
+}
+$pagehead-shadow: 0 0 1rem #ffffff;
+.page-head__title {
+  color: #ffffff;
+  font-family: 'Rock Salt', sans-serif;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  text-shadow: $pagehead-shadow;
+}
+
+.page-head__subtitle {
+  bottom: 25rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 2rem;
+  position: absolute;
+  right: 1rem;
+  text-align: right;
+  text-shadow: $pagehead-shadow;
+  width: 50%;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content__title {
+
+}
+
+.contacts {
+  padding: 1rem;
+}
