@@ -78,15 +78,19 @@ body {
   text-shadow: 0 0 1rem #ffffff; }
 
 .page-head__subtitle {
-  bottom: 25rem;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 2rem;
-  position: absolute;
-  right: 1rem;
-  text-align: right;
-  text-shadow: 0 0 1rem #ffffff;
-  width: 50%; }
+  text-align: center;
+  text-shadow: 0 0 1rem #ffffff; }
+  @media screen and (min-width: 320px) {
+    .page-head__subtitle {
+      bottom: 25rem;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 1rem;
+      text-align: right;
+      width: 50%; } }
 
 .content {
   padding: 1rem; }
