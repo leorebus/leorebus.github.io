@@ -5,6 +5,7 @@
 
 
 body {
+  background-color: #6691da;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -24,7 +25,6 @@ body {
 }
 
 .page-head {
-  background-color: #6691da;
   background-image: url('../img/me.jpg');
   background-size: contain;
   background-position: 0 100%;
@@ -62,7 +62,12 @@ $pagehead-shadow: 0 0 1rem #ffffff;
   }
 }
 
+.page-head__hyphened-word {
+  white-space: nowrap;
+}
+
 .content {
+  background: #ffffff;
   padding: 1rem;
 }
 
@@ -71,5 +76,6 @@ $pagehead-shadow: 0 0 1rem #ffffff;
 }
 
 .contacts {
+  background: #ffffff;
   padding: 1rem;
 }
