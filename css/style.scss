@@ -3,39 +3,58 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+$spacing-base: 1rem;
 
 body {
-  background-color: #6691da;
   font-family: 'Roboto', sans-serif;
 }
 
 .layout {
-  display: flex;
-  flex-direction: column;
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
+
   }
 }
 
 .layout__left {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
   @media screen and (min-width: 768px) {
-    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+
+.layout__right {
+  margin: 100vh 0 0 0;
+  min-height: 100vh;
+  position: relative;
+
+  &:after {
+    $gradient-height: 1rem;
+    content: '';
+    height: $gradient-height;
+    position: absolute;
+    top: -$gradient-height;
+    width: 100%;
+    @include linearGradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 0 0 50%;
   }
 }
 
 .page-head {
+  background-color: #6691da;
   background-image: url('../img/me.jpg');
   background-size: contain;
   background-position: 0 100%;
   background-repeat: no-repeat;
   height: 100vh;
-
-  @media screen and (min-width: 768px) {
-    position: fixed;
-    width: 50%;
-  }
 }
+
 $pagehead-shadow: 0 0 1rem #ffffff;
 .page-head__title {
   color: #ffffff;
@@ -48,15 +67,15 @@ $pagehead-shadow: 0 0 1rem #ffffff;
 
 .page-head__subtitle {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: $spacing-base;
   padding: 2rem;
   text-align: center;
   text-shadow: $pagehead-shadow;
   @media screen and (min-width: 320px) {
-    bottom: 25rem;
+    bottom: 50%;
     font-size: 1.5rem;
     position: absolute;
-    right: 1rem;
+    right: $spacing-base;
     text-align: right;
     width: 50%;
   }
@@ -66,9 +85,25 @@ $pagehead-shadow: 0 0 1rem #ffffff;
   white-space: nowrap;
 }
 
+.page-head__arrow {
+  background: url("../img/arrow.png") no-repeat center;
+  background-size: contain;
+  bottom: $spacing-base;
+  height: 1.5rem;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .page-head__arrow {
+    display: none;
+  }
+}
+
 .content {
   background: #ffffff;
-  padding: 1rem;
+  padding: $spacing-base;
 }
 
 .content__title {
@@ -77,5 +112,5 @@ $pagehead-shadow: 0 0 1rem #ffffff;
 
 .contacts {
   background: #ffffff;
-  padding: 1rem;
+  padding: $spacing-base;
 }
