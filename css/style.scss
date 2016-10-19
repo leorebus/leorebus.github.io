@@ -1,6 +1,7 @@
 @import "reset.scss";
 @import "mixins.scss";
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Work+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Work+Sans|Rubik:400,700');
 
 $spacing-base: 1rem;
 $spacing-half: $spacing-base / 2;
@@ -14,13 +15,25 @@ $red: #ee1050;
 $sky: #6691da;
 $white: #ffffff;
 
-$main-background: $white;
+$main-background-color: $white;
 $content-title-color: $red;
+$links-color: $sky;
+$links-active-color: $red;
 
 @import "layout.scss";
-
 @import "page-head.scss";
+@import "content.scss";
+
+a, a:active, a:visited {
+  color: $links-color;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: $links-active-color;
+}
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }

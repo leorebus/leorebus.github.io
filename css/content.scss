@@ -1,12 +1,11 @@
 .content {
-  background: $main-background;
+  background: $main-background-color;
 }
 
 .content__title {
   color: $content-title-color;
-  font-family: 'Rock Salt', sans-serif;
+  font-weight: 700;
   padding: $spacing-base 0 $spacing-quarter;
-  text-transform: lowercase;
 }
 
 
