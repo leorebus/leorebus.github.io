@@ -1,116 +1,26 @@
 @import "reset.scss";
 @import "mixins.scss";
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Work+Sans');
 
 $spacing-base: 1rem;
+$spacing-half: $spacing-base / 2;
+$spacing-quarter: $spacing-base / 4;
+$spacing-double: 2 * $spacing-base;
+
+$font-size-subtitle: 1.5rem;
+$font-size-title: 2rem;
+
+$red: #ee1050;
+$sky: #6691da;
+$white: #ffffff;
+
+$main-background: $white;
+$content-title-color: $red;
+
+@import "layout.scss";
+
+@import "page-head.scss";
 
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.layout {
-
-  @media screen and (min-width: 768px) {
-
-  }
-}
-
-.layout__left {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-
-  @media screen and (min-width: 768px) {
-    width: 50%;
-  }
-}
-
-.layout__right {
-  margin: 100vh 0 0 0;
-  min-height: 100vh;
-  position: relative;
-
-  &:after {
-    $gradient-height: 1rem;
-    content: '';
-    height: $gradient-height;
-    position: absolute;
-    top: -$gradient-height;
-    width: 100%;
-    @include linearGradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  }
-  @media screen and (min-width: 768px) {
-    margin: 0 0 0 50%;
-  }
-}
-
-.page-head {
-  background-color: #6691da;
-  background-image: url('../img/me.jpg');
-  background-size: contain;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-$pagehead-shadow: 0 0 1rem #ffffff;
-.page-head__title {
-  color: #ffffff;
-  font-family: 'Rock Salt', sans-serif;
-  font-size: 2rem;
-  padding: 2rem;
-  text-align: center;
-  text-shadow: $pagehead-shadow;
-}
-
-.page-head__subtitle {
-  color: #ffffff;
-  font-size: $spacing-base;
-  padding: 2rem;
-  text-align: center;
-  text-shadow: $pagehead-shadow;
-  @media screen and (min-width: 320px) {
-    bottom: 50%;
-    font-size: 1.5rem;
-    position: absolute;
-    right: $spacing-base;
-    text-align: right;
-    width: 50%;
-  }
-}
-
-.page-head__hyphened-word {
-  white-space: nowrap;
-}
-
-.page-head__arrow {
-  background: url("../img/arrow.png") no-repeat center;
-  background-size: contain;
-  bottom: $spacing-base;
-  height: 1.5rem;
-  margin: 0 auto;
-  position: absolute;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .page-head__arrow {
-    display: none;
-  }
-}
-
-.content {
-  background: #ffffff;
-  padding: $spacing-base;
-}
-
-.content__title {
-
-}
-
-.contacts {
-  background: #ffffff;
-  padding: $spacing-base;
+  font-family: 'Work Sans', sans-serif;
 }

@@ -1,0 +1,25 @@
+.content {
+  background: $main-background;
+}
+
+.content__title {
+  color: $content-title-color;
+  font-family: 'Rock Salt', sans-serif;
+  padding: $spacing-base 0 $spacing-quarter;
+  text-transform: lowercase;
+}
+
+
+.content__jibberish {
+  font-size: 0;
+}
+
+.content__jibberish--at:after {
+  content: '@';
+  font-size: 1rem;
+}
+
+.content__jibberish--dot:after {
+  content: '.';
+  font-size: 1rem;
+}
