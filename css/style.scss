@@ -1,6 +1,6 @@
 @import "reset.scss";
 
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather:300i|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather:300i|Roboto+Condensed:300,300i,700');
 
 $viewport-enhanced: 900px;
 $media-enhanced: "screen and (min-width: #{$viewport-enhanced}), print";
@@ -11,6 +11,8 @@ $spacing-quarter: $spacing-base / 4;
 $spacing-double: 2 * $spacing-base;
 
 $font-family-title: 'Amatic SC', cursive;
+$font-family-text: 'Roboto Condensed', sans-serif;
+$font-family-quote: 'Merriweather', serif;
 $font-size-h1: 48pt;
 $font-size-h2: 24pt;
 $font-size-text: 11pt;

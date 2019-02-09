@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $font-family-text;
   font-size: $font-size-text;
   margin: $spacing-double auto;
   max-width: 600px;

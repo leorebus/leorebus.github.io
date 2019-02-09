@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather:300i|Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather:300i|Roboto+Condensed:300,300i,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,7 +43,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 11pt;
   margin: 2rem auto;
   max-width: 600px; }
@@ -139,7 +139,7 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr; } }
 
 .review__text {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-style: italic;
   margin: 1rem 0; }
   @media screen and (min-width: 900px), print {
