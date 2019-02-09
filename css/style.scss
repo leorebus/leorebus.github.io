@@ -1,28 +1,33 @@
 @import "reset.scss";
-@import "mixins.scss";
 
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Work+Sans|Rubik:400,700');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather:300i|Roboto+Condensed');
+
+$viewport-enhanced: 900px;
+$media-enhanced: "screen and (min-width: #{$viewport-enhanced}), print";
 
 $spacing-base: 1rem;
 $spacing-half: $spacing-base / 2;
 $spacing-quarter: $spacing-base / 4;
 $spacing-double: 2 * $spacing-base;
 
-$font-size-subtitle: 1.5rem;
-$font-size-title: 2rem;
+$font-family-title: 'Amatic SC', cursive;
+$font-size-h1: 48pt;
+$font-size-h2: 24pt;
+$font-size-text: 11pt;
 
 $red: #ee1050;
 $sky: #6691da;
-$white: #ffffff;
 
-$main-background-color: $white;
 $content-title-color: $red;
 $links-color: $sky;
 $links-active-color: $red;
 
+@import "body.scss";
 @import "layout.scss";
-@import "page-head.scss";
-@import "content.scss";
+@import "typo.scss";
+@import "list.scss";
+@import "footer.scss";
+@import "review.scss";
 
 a, a:active, a:visited {
   color: $links-color;
@@ -32,8 +37,4 @@ a, a:active, a:visited {
 
 a:hover {
   color: $links-active-color;
-}
-
-body {
-  font-family: 'Rubik', sans-serif;
 }
