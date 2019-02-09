@@ -60,6 +60,7 @@ body {
 @media print {
   html, body {
     height: 297mm;
+    margin: auto;
     width: 210mm; } }
 .sheet {
   background: white;
