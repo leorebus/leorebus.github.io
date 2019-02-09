@@ -1,0 +1,31 @@
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: $font-size-text;
+  margin: $spacing-double auto;
+  max-width: 600px;
+  @media #{$media-enhanced} {
+    background: url('../img/cafe.jpg') center;
+    background-size: cover;
+    max-height: 297mm;
+    max-width: 210mm;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    height: 297mm;
+    width: 210mm;
+  }
+}
+.sheet {
+  background: white;
+  padding: $spacing-double;
+  @media #{$media-enhanced} {
+    padding: 20mm 20mm;
+  }
+}

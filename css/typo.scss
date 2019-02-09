@@ -1,0 +1,21 @@
+h1, h2 {
+  font-family: $font-family-title;
+  text-align: center;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  margin: $spacing-base;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.details {
+  font-style: italic;
+}

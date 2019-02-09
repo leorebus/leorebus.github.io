@@ -1,0 +1,37 @@
+$font-size-footer: $font-size-h2;
+$font-family-footer: $font-family-title;
+
+.footer {
+    font-family: $font-family-footer;
+    font-size: $font-size-footer;
+    margin: $spacing-base;
+    text-align: center;
+}
+
+.footer__element  {
+  white-space: nowrap;
+}
+
+.footer__jibberish {
+  font-size: 0;
+}
+
+.footer__jibberish--at:after {
+  content: '@';
+  font-size: $font-size-footer;
+}
+
+.footer__jibberish--dot:after {
+  content: '.';
+  font-size: $font-size-footer;
+}
+
+.footer__jibberish--plus:after {
+  content: '+';
+  font-size:$font-size-footer;
+}
+
+.footer__jibberish--five:after {
+  content: '5';
+  font-size: $font-size-footer;
+}
