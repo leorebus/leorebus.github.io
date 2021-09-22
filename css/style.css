@@ -141,14 +141,16 @@ h3 {
 .review__text {
   font-family: "Merriweather", serif;
   font-style: italic;
-  margin: 1rem 0; }
+  margin-top: 1rem; 
+  padding: 0.5rem; }
   @media screen and (min-width: 900px), print {
     .review__text {
       margin: 0; } }
 
 .review__author {
   grid-row-start: 2;
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem; 
+  padding: 0.5rem;}
 
 a, a:active, a:visited {
   color: #6691da;
