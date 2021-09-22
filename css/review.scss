@@ -8,7 +8,8 @@
 .review__text {
   font-family: $font-family-quote;
   font-style: italic;
-  margin: $spacing-base 0;
+  margin-top: $spacing-base;
+  padding: $spacing-half;
   @media #{$media-enhanced} {
     margin: 0;
   }
@@ -17,4 +18,5 @@
 .review__author {
   grid-row-start: 2;
   margin-top: $spacing-half;
+  padding: $spacing-half;
 }
